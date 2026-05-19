@@ -2,7 +2,7 @@ require "net/http"
 require "json"
 require "uri"
 
-module SemanticChunker
+module SemanticTextChunker
   module Embedders
     class OpenAI < Base
       BATCH_SIZE = 100

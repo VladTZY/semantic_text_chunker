@@ -1,11 +1,11 @@
-require_relative "semantic_chunker/version"
-require_relative "semantic_chunker/chunker"
-require_relative "semantic_chunker/embedders/cohere"
-require_relative "semantic_chunker/embedders/openai"
-require_relative "semantic_chunker/embedders/open_router"
-require_relative "semantic_chunker/embedders/null"
+require_relative "semantic_text_chunker/version"
+require_relative "semantic_text_chunker/chunker"
+require_relative "semantic_text_chunker/embedders/cohere"
+require_relative "semantic_text_chunker/embedders/openai"
+require_relative "semantic_text_chunker/embedders/open_router"
+require_relative "semantic_text_chunker/embedders/null"
 
-module SemanticChunker
+module SemanticTextChunker
   class EmbedderError < StandardError; end
 
   def self.chunk(text, **opts)

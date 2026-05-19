@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe SemanticChunker::Chunker do
+RSpec.describe SemanticTextChunker::Chunker do
   subject(:chunker) { described_class.new }
 
   it "always returns an Array" do
@@ -53,13 +53,13 @@ RSpec.describe SemanticChunker::Chunker do
   end
 
   describe "convenience methods" do
-    it "SemanticChunker.chunk returns chunks" do
-      chunks = SemanticChunker.chunk("Hello world. This is a test.")
+    it "SemanticTextChunker.chunk returns chunks" do
+      chunks = SemanticTextChunker.chunk("Hello world. This is a test.")
       expect(chunks).to be_an(Array)
     end
 
-    it "SemanticChunker.chunk_with_metadata returns prefixed chunks" do
-      chunks = SemanticChunker.chunk_with_metadata(
+    it "SemanticTextChunker.chunk_with_metadata returns prefixed chunks" do
+      chunks = SemanticTextChunker.chunk_with_metadata(
         "Hello world. This is a test.",
         title: "My Doc"
       )

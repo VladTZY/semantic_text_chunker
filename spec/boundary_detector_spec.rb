@@ -1,7 +1,7 @@
 require "spec_helper"
 
-RSpec.describe SemanticChunker::BoundaryDetector do
-  let(:embedder) { SemanticChunker::Embedders::Null.new }
+RSpec.describe SemanticTextChunker::BoundaryDetector do
+  let(:embedder) { SemanticTextChunker::Embedders::Null.new }
 
   it "returns empty boundaries for a single sentence" do
     sentences  = ["Just one sentence."]

@@ -5,7 +5,7 @@ require_relative "boundary_detector"
 require_relative "chunk_builder"
 require_relative "metadata"
 
-module SemanticChunker
+module SemanticTextChunker
   class Chunker
     def initialize(
       embedder: Embedders::Null.new,

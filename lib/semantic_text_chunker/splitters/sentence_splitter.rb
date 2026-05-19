@@ -1,4 +1,4 @@
-module SemanticChunker
+module SemanticTextChunker
   module Splitters
     class SentenceSplitter
       ABBREVS = %w[Mr Mrs Dr Prof Sr Jr vs etc e.g i.e U.S U.K U.S.A Fig Vol No].freeze

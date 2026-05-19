@@ -1,4 +1,4 @@
-module SemanticChunker
+module SemanticTextChunker
   class BoundaryDetector
     def initialize(sentences:, embeddings:, threshold:, max_tokens:, embedder:)
       @sentences  = sentences

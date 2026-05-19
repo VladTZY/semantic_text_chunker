@@ -1,4 +1,4 @@
-module SemanticChunker
+module SemanticTextChunker
   module Embedders
     class Base
       def embed(texts)

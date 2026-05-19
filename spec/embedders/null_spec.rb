@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe SemanticChunker::Embedders::Null do
+RSpec.describe SemanticTextChunker::Embedders::Null do
   subject(:embedder) { described_class.new }
 
   it "returns 512-dimensional vectors" do

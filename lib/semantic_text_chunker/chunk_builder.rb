@@ -1,4 +1,4 @@
-module SemanticChunker
+module SemanticTextChunker
   class ChunkBuilder
     def initialize(sentences:, boundaries:, overlap_sentences:)
       @sentences         = sentences

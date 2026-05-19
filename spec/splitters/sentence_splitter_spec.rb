@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe SemanticChunker::Splitters::SentenceSplitter do
+RSpec.describe SemanticTextChunker::Splitters::SentenceSplitter do
   subject(:splitter) { described_class.new }
 
   it "splits on sentence-ending punctuation followed by uppercase" do

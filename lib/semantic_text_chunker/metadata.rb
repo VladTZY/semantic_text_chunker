@@ -1,4 +1,4 @@
-module SemanticChunker
+module SemanticTextChunker
   module Metadata
     KNOWN_KEYS = %i[title author chapter section source].freeze
 

@@ -2,7 +2,7 @@ require "net/http"
 require "json"
 require "uri"
 
-module SemanticChunker
+module SemanticTextChunker
   module Embedders
     class OpenRouter < Base
       BATCH_SIZE = 100
@@ -11,8 +11,8 @@ module SemanticChunker
       def initialize(api_key:, model: "openai/text-embedding-3-small", site_url: nil, site_name: nil)
         @api_key   = api_key
         @model     = model
-        @site_url  = site_url  || "https://github.com/VladTZY/semantic_chunker"
-        @site_name = site_name || "semantic_chunker"
+        @site_url  = site_url  || "https://github.com/VladTZY/semantic_text_chunker"
+        @site_name = site_name || "semantic_text_chunker"
       end
 
       def embed(texts)
